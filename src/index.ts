@@ -1,11 +1,11 @@
 #! /usr/bin/env node
 
 // import { Option } from './core/option'
-import { cac } from 'cac'
+import { Command } from 'commander'
+const program = new Command()
 
-const cli = cac()
-cli.option('--help', '帮助')
-cli.parse()
+program.option('--help', '帮助信息')
+program.parse()
 
 // const option = new Option()
 
